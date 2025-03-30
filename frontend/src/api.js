@@ -1,9 +1,10 @@
 // at the end we use api rather than axios
 import axios from "axios";
 import { ACCESS_TOKEN } from "./constants";
+const apiUrl = "/choreo-apis/django-react-test/backend/v1"
 
 const api = axios.create({
-    baseURL: import.meta.env.VITE_API_URL, // this is the url of the backend, you only to add the path when doing requests
+    baseURL: import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : apiUrl
 });
 
 // this add info in our request so we don't need to add everytime
