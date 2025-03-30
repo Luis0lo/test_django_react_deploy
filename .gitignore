@@ -1,0 +1,7 @@
+env/
+backend/.env
+backend/backend/env/
+backend/backend/env/.env
+backend/backend/env/.env.local
+backend/backend/env/.env.development.local
+backend/backend/env/.env.test.local
